@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useTranslation } from 'react-i18next';
+import { Button } from "@/components/ui/button";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { t, i18n } = useTranslation();
+  
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+      <div className="text-center">
+        <h1 className="text-5xl font-bold mb-12">{t('hello')}</h1>
+        
+        <div className="flex gap-3 justify-center">
+          <Button 
+            variant="ghost" 
+            onClick={() => changeLanguage('en')}
+            className="text-white opacity-50 hover:opacity-100 hover:bg-zinc-800 transition-opacity duration-200"
+          >
+            English
+          </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => changeLanguage('de')}
+            className="text-white opacity-50 hover:opacity-100 hover:bg-zinc-800 transition-opacity duration-200"
+          >
+            Deutsch
+          </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => changeLanguage('ru')}
+            className="text-white opacity-50 hover:opacity-100 hover:bg-zinc-800 transition-opacity duration-200"
+          >
+            Русский
+          </Button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+
+    
+  );
 }
 
-export default App
+export default App;
+
