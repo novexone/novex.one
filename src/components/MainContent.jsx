@@ -27,7 +27,7 @@ const MainContent = () => {
           letterSpacing: "0.1em",
           color: theme.palette.text.primary,
           fontFamily: '"Roboto Mono", "Roboto", monospace',
-          fontSize: { xs: "1rem", sm: "1.25rem", md: "3.5rem" },
+          fontSize: { xs: "2.5rem", sm: "3.5rem", md: "3.5rem" },
           mb: 2,
         }}
       >
