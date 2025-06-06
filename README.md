@@ -1,12 +1,10 @@
-# React + Vite
+# Novex Portfolio - Development Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**🚧 Under Construction** - Temporary landing page while the main portfolio is being developed.
 
-Currently, two official plugins are available:
+## 🌟 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit novex.one to see the current development site.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📋 About
+This is a temporary "under construction" page built with modern web technologies while the full portfolio website is being developed in the `main` branch.
