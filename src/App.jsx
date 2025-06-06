@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Header from "./components/Header";
+import MainContent from "./components/MainContent";
 
 // Dark Theme
 const theme = createTheme({
@@ -32,10 +33,16 @@ function App() {
       <Box
         sx={{
           minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
           backgroundColor: theme.palette.background.default,
         }}
       >
+        {/* Header */}
         <Header />
+
+        {/* Main Content */}
+        <MainContent />
       </Box>
     </ThemeProvider>
   );
