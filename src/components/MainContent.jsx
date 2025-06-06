@@ -18,6 +18,23 @@ const MainContent = () => {
         gap: 3,
       }}
     >
+      {/* NOVEX ONE */}
+      <Typography
+        variant="h6"
+        component="h1"
+        sx={{
+          fontWeight: 300,
+          letterSpacing: "0.1em",
+          color: theme.palette.text.primary,
+          fontFamily: '"Roboto Mono", "Roboto", monospace',
+          fontSize: { xs: "1rem", sm: "1.25rem", md: "3.5rem" },
+          mb: 2,
+        }}
+      >
+        NOVEX ONE
+      </Typography>
+
+      {/* Website Under Development */}
       <Typography
         variant="h5"
         component="h2"
@@ -31,6 +48,7 @@ const MainContent = () => {
         Website Under Development
       </Typography>
 
+      {/* Loading Circle */}
       <CircularProgress
         size={32}
         thickness={2}

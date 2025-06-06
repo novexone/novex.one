@@ -2,7 +2,6 @@ import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 
@@ -40,9 +39,6 @@ function App() {
           backgroundColor: theme.palette.background.default,
         }}
       >
-        {/* Header */}
-        <Header />
-
         {/* Main Content */}
         <MainContent />
 
